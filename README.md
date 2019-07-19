@@ -1,4 +1,5 @@
-##npm i 安装包
+##
+npm i 安装包
 
 ## npm start 启动项目
 
