@@ -101,22 +101,22 @@ class Password extends Component {
         {/* 密码框布局 */}
         <div className="password">
           <div className="divBox" ref="divBox" onClick={this.divBox}>
-            <div ref="div1">
+            <div ref="div1" className={!this.state.len[0] ? 'boxShadow' : ''}>
               { this.state.len[0] }
             </div>
-            <div ref="div2">
+            <div ref="div2" className={this.state.len[0] && !this.state.len[1] ? 'boxShadow' : ''}>
               { this.state.len[1] }
             </div>
-            <div ref="div3">
+            <div ref="div3" className={this.state.len[1] && !this.state.len[2] ? 'boxShadow' : ''}>
               { this.state.len[2] }
             </div>
-            <div ref="div4">
+            <div ref="div4" className={this.state.len[2] && !this.state.len[3] ? 'boxShadow' : ''}>
               { this.state.len[3] }
             </div>
-            <div ref="div5">
+            <div ref="div5" className={this.state.len[3] && !this.state.len[4] ? 'boxShadow' : ''}>
               { this.state.len[4] }
             </div>
-            <div ref="div6">
+            <div ref="div6" className={this.state.len[4] && !this.state.len[5] ? 'boxShadow' : ''}>
               { this.state.len[5] }
             </div>
           </div>
